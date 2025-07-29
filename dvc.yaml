@@ -1,0 +1,9 @@
+stages:
+  preprocess:
+    cmd: python src/preprocess.py
+    deps:
+    - data/updated_NCMAPSS_data.csv
+    - src/preprocess.py
+    outs:
+    - data/processed/feature_statistics.csv
+    - data/processed/processed_engine_data.csv
